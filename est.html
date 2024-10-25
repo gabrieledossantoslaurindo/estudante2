@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sistema de Ocorrências Escolares</title>
+  <link rel="stylesheet" href="est.css">
+</head>
+<body>
+  <header>
+    <h1>Sistema de Ocorrências Escolares</h1>
+  </header>
+
+  <main>
+    <section id="cadastro-estudante">
+      <h2>Cadastro de Estudante</h2>
+      <form id="form-estudante">
+        <div>
+          <label for="anoLetivo">Ano Letivo:</label>
+          <input type="number" id="anoLetivo" name="anoLetivo" required>
+        </div>
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        <div>
+          <label for="turma">Turma:</label>
+          <input type="text" id="turma" name="turma" required>
+        </div>
+        <div>
+          <label for="responsaveis">Responsáveis:</label>
+          <input type="text" id="responsaveis" name="responsaveis" required>
+        </div>
+        <div>
+          <label for="telefoneEstudante">Telefone do Estudante:</label>
+          <input type="tel" id="telefoneEstudante" name="telefoneEstudante" required>
+        </div>
+        <div>
+          <label for="telefoneResponsaveis">Telefone dos Responsáveis:</label>
+          <input type="tel" id="telefoneResponsaveis" name="telefoneResponsaveis" required>
+        </div>
+        <div>
+          <label for="endereco">Endereço:</label>
+          <input type="text" id="endereco" name="endereco" required>
+        </div>
+        <div>
+          <label for="problemaSaude">Problema de Saúde/Medicamento:</label>
+          <textarea id="problemaSaude" name="problemaSaude"></textarea>
+        </div>
+        <div>
+          <label for="cgm">CGM:</label>
+          <input type="text" id="cgm" name="cgm" required>
+        </div>
+        <div>
+          <label for="cpf">CPF:</label>
+          <input type="text" id="cpf" name="cpf" required>
+        </div>
+        <div>
+          <label for="foto">Foto do Estudante:</label>
+          <input type="file" id="foto" name="foto" accept="image/*">
+        </div>
+        <button type="submit">Cadastrar Estudante</button>
+      </form>
+    </section>
+
+    <section id="lista-estudantes">
+      <h2>Lista de Estudantes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>CGM</th>
+            <th>Nome</th>
+            <th>Turma</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="registro-ocorrencia">
+      <h2>Registro de Ocorrência</h2>
+      <form id="form-ocorrencia">
+        <div>
+          <label for="dataOcorrido">Data do Ocorrido:</label>
+          <input type="date" id="dataOcorrido" name="dataOcorrido" required>
+        </div>
+        <div>
+          <label for="registro">Registro:</label>
+          <textarea id="registro" name="registro" required></textarea>
+        </div>
+        <div>
+          <label for="cgmEstudante">CGM do Estudante:</label>
+          <input type="text" id="cgmEstudante" name="cgmEstudante" required>
+        </div>
+        <div>
+          <label for="adendos">Adendos:</label>
+          <textarea id="adendos" name="adendos"></textarea>
+        </div>
+        <div>
+          <label for="arquivo">Arquivo (Imagem, Vídeo, Documento):</label>
+          <input type="file" id="arquivo" name="arquivo" accept="image/*, video/*, application/pdf">
+        </div>
+        <button type="submit">Registrar Ocorrência</button>
+      </form>
+    </section>
+
+    <section id="pesquisa-estudante">
+      <h2>Pesquisa de Estudante</h2>
+      <form id="form-pesquisa-estudante">
+        <div>
+          <label for="criterioPesquisa">Critério de Pesquisa:</label>
+          <select id="criterioPesquisa" name="criterioPesquisa">
+            <option value="nome">Nome</option>
+            <option value="turma">Turma</option>
+            <option value="cgm">CGM</option>
+          </select>
+        </div>
+        <div>
+          <label for="valorPesquisa">Valor da Pesquisa:</label>
+          <input type="text" id="valorPesquisa" name="valorPesquisa" required>
+        </div>
+        <button type="submit">Pesquisar</button>
+      </form>
+      <div id="resultados-pesquisa">
+        <!-- Resultados da pesquisa serão exibidos aqui -->
+      </div>
+    </section>
+
+    <section id="pesquisa-ocorrencia">
+      <h2>Pesquisa de Ocorrências</h2>
+      <form id="form-pesquisa-ocorrencia">
+        <div>
+          <label for="criterioPesquisaOcorrencia">Critério de Pesquisa:</label>
+          <select id="criterioPesquisaOcorrencia" name="criterioPesquisaOcorrencia">
+            <option value="data">Data</option>
+            <option value="conteudo">Conteúdo</option>
+          </select>
+        </div>
+        <div>
+          <label for="valorPesquisaOcorrencia">Valor da Pesquisa:</label>
+          <input type="text" id="valorPesquisaOcorrencia" name="valorPesquisaOcorrencia" required>
+        </div>
+        <button type="submit">Pesquisar</button>
+      </form>
+      <div id="resultados-pesquisa-ocorrencia">
+        <!-- Resultados da pesquisa serão exibidos aqui -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2023 Sistema de Ocorrências Escolares</p>
+  </footer>
+
+  <script src="est.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
