@@ -192,3 +192,15 @@ function cadastrarEstudante() {
           linha.insertCell().textContent = ocorrencia.registro;
           linha.insertCell().textContent = ocorrencia.cgmEstudante;
           // ... outros campos
+
+
+
+
+
+
+
+          const btnCadastro = document.getElementById('btn-cadastro');
+
+btnCadastro.addEventListener('click', function() {
+  window.location.href = 'cadastro-concluido.html';
+});
