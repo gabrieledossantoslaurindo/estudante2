@@ -204,3 +204,31 @@ function cadastrarEstudante() {
 btnCadastro.addEventListener('click', function() {
   window.location.href = 'cadastro-concluido.html';
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let currentPage = 1;
+
+function nextPage() {
+    currentPage++;
+    // Implement logic to load the next page content here.
+    console.log("Navigating to page", currentPage);
+}
+
+function prevPage() {
+    currentPage--;
+    // Implement logic to load the previous page content here.
+    console.log("Navigating to page", currentPage);
+}
